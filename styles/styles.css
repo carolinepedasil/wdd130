@@ -34,3 +34,15 @@ footer {
     border-top: 1px solid #000;
     text-align: center;
 }
+
+nav {
+    text-decoration: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+h1 {
+    text-decoration: none;
+}
