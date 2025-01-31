@@ -11,6 +11,7 @@ aside {
     background-color: #eee;
     color: #333;
     text-align: center;
+    position: relative;
 }
 
 aside img {
@@ -47,12 +48,7 @@ h1 {
     text-decoration: none;
 }
 
-header {
-    margin: 0 auto;
-    max-width: 840px;
-}
-
-footer {
+header, footer, .grid {
     margin: 0 auto;
     max-width: 840px;
 }
@@ -60,8 +56,4 @@ footer {
 .grid {
     display: grid;
     align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    margin: 0 auto;
-    max-width: 840px;
 }
