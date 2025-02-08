@@ -139,6 +139,7 @@ footer a {
     width: 100%;
     max-width: 600px;
     height: 350px;
+    border: none;
     border-radius: 8px;
 }
 
