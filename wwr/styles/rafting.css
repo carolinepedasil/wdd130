@@ -16,23 +16,31 @@ body {
 }
 
 header {
-    background-color: var(--secondary-color);
-    color: white;
-    text-align: center;
-    padding: 1rem;
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
 }
 
 header .logo {
     width: 150px;
-    display: block;
-    margin: 0 auto;
+    margin-left: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
+
 header nav a {
-    color: white;
+    color: var(--accent1-color);
     margin: 0 1rem;
     text-decoration: none;
     font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 main {
@@ -42,42 +50,37 @@ main {
 }
 
 .hero {
-    position: relative;
     text-align: center;
-}
-
-.hero img {
-    width: 100%;
-    display: block;
+    padding: 2rem;
 }
 
 .hero h1 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Georgia', serif;
     font-size: 2.5rem;
-    color: var(--accent1-color);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-family: 'Georgia', serif;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
-.hero article {
-    position: absolute;
-    bottom: 10%;
-    left: 5%;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 1rem;
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    width: 60%;
+}
+
+.hero-content img {
+    width: 150px;
     border-radius: 8px;
-    width: 40%;
 }
 
-.hero article img {
-    float: right;
-    width: 50px;
-    border-radius: 50%;
-    margin-left: 1rem;
-}
 
 section h2 {
     font-family: 'Georgia', serif;
@@ -91,19 +94,89 @@ section img {
 }
 
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--primary-color);
     color: var(--accent1-color);
+    padding: 1rem;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
     text-align: center;
-    padding: 1rem 0;
+    flex-grow: 1;
+}
+
+.footer-icons {
+    position: absolute;
+    right: 3rem;
+    display: flex;
+    gap: 50px;
 }
 
 footer a img {
     width: 25px;
-    margin: 0 5px;
 }
 
-footer a {
-    text-decoration: none;
+.history-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 2rem;
+    background-color: white;
+    gap: 2rem;
+}
+
+.history-title {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Georgia', serif;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.history-text {
+    width: 45%;
+}
+
+.adventure-section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.adventure-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Georgia', serif;
+    margin-bottom: 1rem;
+}
+
+.adventure-images {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: nowrap;
+}
+
+.adventure-images figure {
+    text-align: center;
+    max-width: 150px;
+    flex: 1;
+}
+
+.adventure-images img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.adventure-images figcaption {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    margin-top: 0.5rem;
 }
 
 .contact-info {
